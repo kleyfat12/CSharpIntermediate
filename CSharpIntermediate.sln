@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumeratorAndIEnumerable",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceICloneable", "InterfaceICloneable\InterfaceICloneable.csproj", "{13D10533-F992-4D40-BE01-FADB56CAE2DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceIComparable", "InterfaceIComparable\InterfaceIComparable.csproj", "{DCC836D7-428E-4730-9D1D-71459E7E4B1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{13D10533-F992-4D40-BE01-FADB56CAE2DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13D10533-F992-4D40-BE01-FADB56CAE2DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13D10533-F992-4D40-BE01-FADB56CAE2DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC836D7-428E-4730-9D1D-71459E7E4B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC836D7-428E-4730-9D1D-71459E7E4B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC836D7-428E-4730-9D1D-71459E7E4B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC836D7-428E-4730-9D1D-71459E7E4B1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
