@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace IEnumeratorAndIEnumerable
 {
-    class Box
+    class Box : IEnumerable
     {
         private Ball[] balls;
         private string name;
@@ -25,7 +25,36 @@ namespace IEnumeratorAndIEnumerable
 
         public IEnumerator GetEnumerator()
         {
-            return balls.GetEnumerator();
+            return new BoxEnum(balls);
+        }
+    }
+
+    class BoxEnum : IEnumerator
+    {
+        public Ball[] balls;
+        private int position = -1;
+
+        public BoxEnum(Ball[] balls)
+        {
+            this.balls = balls;
+        }
+
+        public object Current
+        {
+            get
+            {
+                return balls[position];
+            }
+        }
+
+        public bool MoveNext()
+        {
+            return ++position < balls.Length;
+        }
+
+        public void Reset()
+        {
+            position = -1;
         }
     }
 }

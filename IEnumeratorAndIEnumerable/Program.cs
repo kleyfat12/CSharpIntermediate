@@ -5,3 +5,7 @@ foreach (Ball ball in box)
 {
     ball.Show();
 }
+foreach (Ball ball in box)
+{
+    ball.Show();
+}
