@@ -1,22 +1,35 @@
 ﻿namespace Delegates
 {
-    public delegate void MyDelegate(string m);
-
     class Program
     {
         static void Main(string[] args)
         {
-            Car car = new Car();
-            Bike bike = new Bike();
+            Random random = new Random();
+            Refrigerator refrigerator = new(30, 0);
 
-            MyDelegate myDelegate = new MyDelegate(car.CarPrintMessage);
-            myDelegate("A super duper message");
+            refrigerator.SetDefrostEvent(new Refrigerator.DefrostEvent(GradesReport));
+            refrigerator.SetLowReservesEvent(new Refrigerator.LowReservesEvent(KilosReport));
 
-            myDelegate = new MyDelegate(bike.BikePrintMessage);
-            myDelegate("A boring message");
+            while(refrigerator.Kilos > 5 && refrigerator.Grades < 20)
+            {
+                refrigerator.Work(random.Next(1, 3));
+            }
+        }
 
-            Console.WriteLine(car.Message);
-            Console.WriteLine(bike.Message);
+        public static void KilosReport(int kilos)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Low reserves (I am in main)");
+            Console.WriteLine("Kilos remaining: " + kilos);
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+
+        public static void GradesReport(int grades)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("High temperature (I am in main)");
+            Console.WriteLine("The temperature is " + grades + " degrees");
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }
