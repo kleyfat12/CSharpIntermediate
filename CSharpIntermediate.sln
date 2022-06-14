@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceIComparable", "Int
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CallbackInterface", "CallbackInterface\CallbackInterface.csproj", "{848952FF-BDFF-4FF8-B83C-C91ECCF838D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{5A9E3129-777A-401F-A90A-FF26F9213488}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates", "Delegates\Delegates.csproj", "{5A9E3129-777A-401F-A90A-FF26F9213488}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexer_", "Indexer_\Indexer_.csproj", "{11B8BE27-D06D-42D9-B6D7-CE05531662E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{5A9E3129-777A-401F-A90A-FF26F9213488}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A9E3129-777A-401F-A90A-FF26F9213488}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A9E3129-777A-401F-A90A-FF26F9213488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11B8BE27-D06D-42D9-B6D7-CE05531662E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11B8BE27-D06D-42D9-B6D7-CE05531662E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11B8BE27-D06D-42D9-B6D7-CE05531662E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11B8BE27-D06D-42D9-B6D7-CE05531662E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
